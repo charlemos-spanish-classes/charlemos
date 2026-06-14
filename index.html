@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlemos Spanish Classes</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fdf6f0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #f4c2a1, #f7d6b0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #f1a208;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #e63946;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Quiz styling */
+.quiz button {
+    margin: 5px;
+}
+
+.logo{
+    width:350px;
+    max-width:90%;
+    display:block;
+    margin:auto;
+
+    filter:drop-shadow(
+      0 10px 20px rgba(0,0,0,.15)
+    );
+}
+
+.tagline{
+
+    font-size:20px;
+
+    color:white;
+
+    margin-top:10px;
+
+    font-style:italic;
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+.gallery-grid img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+
+    transition: transform .3s ease;
+
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.03);
+
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    border-radius: 12px;
+}
+
+/* buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+/* dots */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover {
+    background-color: #e63946;
+}
+
+/* fade animation */
+.fade {
+    animation: fade 0.6s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png"
+class="logo"
+alt="Charlemos Logo">
+
+<p class="tagline">
+Learn Spanish the fun way!
+</p>
+
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#levels">Your Level</a>
+    <a href="#classes">Classes</a>
+    <a href="#gallery">Gallery </a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+   <section id="about">
+    <h2>About Monica</h2>
+
+    <div class="about-container">
+
+        <img src="Monica.jpg" alt="Monica teaching Spanish">
+
+        <div class="about-text">
+            <p>
+            I have been in Saskatoon for 18 years and I am originally from Ecuador. 
+            I come from a family of educators. My mom was an elementary English teacher 
+            and my dad a university engineering professor.
+            </p>
+
+            <p>
+            I started tutoring German at age 16, later earned my business degree and MBA, 
+            along with an English teaching certificate. I have taught English to kids 
+            and university students.
+            </p>
+
+            <p>
+            After moving to Canada, I began teaching Spanish at community associations 
+            and developed programs at Hampton Preschool. I also provide interpretation 
+            services for courts, schools, and medical appointments.
+            </p>
+
+            <p>
+            Teaching is not a job — it gives me joy. You will enjoy learning Spanish 
+            in a fun, dynamic way through songs, dialogues, and interactive activities.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="levels">
+    <section id="levels">
+    <h2>Find Your Spanish Level</h2>
+
+    <p>
+        Explore our class levels, schedules, and key information.
+    </p>
+
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="poster1.png" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+            <img src="poster2.png" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+            <img src="poster3.png" style="width:100%">
+        </div>
+
+        <!-- Add more posters if needed -->
+
+        <!-- Next/Prev buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center; margin-top:10px;">
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+</section>
+
+<section id="classes">
+    <h2>Upcoming Classes</h2>
+
+    <div class="card">
+        <h3>Beginner</h3>
+        <p>Learn basic phrases, greetings, ordering food, and travel skills.</p>
+        <p>Monday: 6:30–7:30 pm & 7:40–8:40 pm</p>
+    </div>
+
+    <div class="card">
+        <h3>Intermediate</h3>
+        <p>Expand vocabulary and learn past & future tenses.</p>
+        <p>Tuesday: 6:30–7:30 pm</p>
+    </div>
+
+    <div class="card">
+        <h3>Conversation</h3>
+        <p>Practice speaking with real-life topics and Spanish-speaking guests.</p>
+        <p>Tuesday: 7:40–8:40 pm</p>
+    </div>
+
+    <div class="card">
+        <p><strong>Location:</strong> Hampton Free Methodist Church</p>
+        <p><strong>Start Date:</strong> April 12–13, 2026</p>
+        <p><strong>Price:</strong> $90 (8 weeks)</p>
+    </div>
+</section>
+
+<section id="gallery">
+
+<h2>Inside Our Classes</h2>
+
+<p>
+See what learning Spanish with Monica looks like.
+Songs, games, conversation, and fun activities.
+</p>
+
+<div class="gallery-grid">
+
+    <img src="photo1.jpg" alt="Spanish Class">
+
+    <img src="photo2.jpg" alt="Spanish Class">
+
+    <img src="photo3.jpg" alt="Spanish Class">
+
+    <img src="photo4.jpg" alt="Spanish Class">
+
+    <img src="photo5.jpg" alt="Spanish Class">
+
+    <img src="photo6.jpg" alt="Spanish Class">
+
+</div>
+
+</section>
+
+<section id="reviews">
+    <h2>Reviews</h2>
+
+    <div class="card">
+        <p>
+        "Monica is a very talented and experienced teacher. Her classes are fun 
+        and engaging with songs, videos, and interactive learning."
+        </p>
+        <strong>- Tara Nichols</strong>
+    </div>
+
+    <div class="card">
+        <p>
+        "Monica’s classes brighten your day. You will enjoy stories, songs, and 
+        real-life conversations."
+        </p>
+        <strong>- Karolina Steinerova</strong>
+    </div>
+
+    <div class="card">
+        <p>
+        "I highly recommend learning with Monica. Her teaching is fun, friendly, 
+        and effective."
+        </p>
+        <strong>- Rob Kinley</strong>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact us and Register for Classes</h2>
+
+    <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf7GOK-3ryPERj2qyNRjfHxEF2mLNdsra-_wFXDEh20K2q8TQ/viewform?embedded=true"
+        width="640"
+        height="1130"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+    </iframe>
+
+    <p>Email: charlemosconmonica@gmail.com</p>
+    <p>Instagram: @charlemos.2025</p>
+</section>
+
+<footer>
+    <p>© 2026 Charlemos Spanish Classes</p>
+</footer>
+
+<script>
+function result(level) {
+    document.getElementById("quizResult").innerText =
+        "Your level might be: " + level;
+}
+
+function submitForm(event) {
+    event.preventDefault();
+    document.getElementById("formMessage").innerText =
+        "Thank you! Monica will contact you soon.";
+}
+</script>
+
+<script>
+let slideIndex = 1;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+    showSlide(slideIndex += n);
+}
+
+function setSlide(n) {
+    showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+}
+</script>
+
+</body>
+</html>
