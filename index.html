@@ -220,6 +220,76 @@ footer {
     }
 }
 
+#delisle {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.delisle-poster {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: auto;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 1200px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .delisle-poster {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
 </style>
 
 </head>
@@ -240,6 +310,7 @@ Learn Spanish the fun way!
 
 <nav>
     <a href="#about">About</a>
+    <a href="#delisle">Delisle Classes</a>
     <a href="#levels">Your Level</a>
     <a href="#classes">Classes</a>
     <a href="#gallery">Gallery </a>
@@ -283,6 +354,27 @@ Learn Spanish the fun way!
     </div>
 </section>
 
+<section id="delisle">
+    <h2>Delisle Classes</h2>
+
+    <p>
+        We are excited to announce that we now offer
+        <strong>Beginner Level 1</strong> and
+        <strong>Beginner Level 2</strong> Spanish classes
+        at Delisle Community Church.
+    </p>
+
+    <p>
+        Join us in a welcoming and interactive environment
+        where you can learn Spanish through conversation,
+        activities, music, and practical real-world situations.
+    </p>
+
+    <img src="delisle-poster.jpg"
+         alt="Delisle Spanish Classes Poster"
+         class="delisle-poster">
+</section>
+
 <section id="levels">
     <section id="levels">
     <h2>Find Your Spanish Level</h2>
@@ -324,28 +416,26 @@ Learn Spanish the fun way!
     <h2>Upcoming Classes</h2>
 
     <div class="card">
-        <h3>Beginner</h3>
-        <p>Learn basic phrases, greetings, ordering food, and travel skills.</p>
-        <p>Monday: 6:30–7:30 pm & 7:40–8:40 pm</p>
+        <h3>Saskatoon</h3>
+        <p>Starting in September 2026</p>
     </div>
 
     <div class="card">
-        <h3>Intermediate</h3>
-        <p>Expand vocabulary and learn past & future tenses.</p>
-        <p>Tuesday: 6:30–7:30 pm</p>
+        <h3>Delisle</h3>
+        <p>Beginner level 1</p>
+        <p>Wednesday August 5, 7:30 - 8:30 pm</p>
+        <p>Beginner level 2</p>
+        <p>Wednesday August 5, 6:15 - 7:15 pm</p>
+        <p>Price: $95 (8 weeks)</p>
     </div>
-
+<!-- Retroactive code for locations
     <div class="card">
-        <h3>Conversation</h3>
-        <p>Practice speaking with real-life topics and Spanish-speaking guests.</p>
-        <p>Tuesday: 7:40–8:40 pm</p>
-    </div>
-
-    <div class="card">
+        <h3>Locations</h3>
         <p><strong>Location:</strong> Hampton Free Methodist Church</p>
         <p><strong>Start Date:</strong> April 12–13, 2026</p>
         <p><strong>Price:</strong> $90 (8 weeks)</p>
     </div>
+-->
 </section>
 
 <section id="gallery">
